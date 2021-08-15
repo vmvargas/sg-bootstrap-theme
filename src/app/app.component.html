@@ -1,7 +1,7 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-auto sidebar-wrapper">
-      <h4>SG Kitchen Sink</h4>
+<main class="container-fluid">
+  <div class="row flex-xl-nowrap">
+    <div class="col-md-3 col-xl-2 sidebar-wrapper">
+      <h4>SG Theme</h4>
       <ul class="nav flex-column">
         <h6>Overview</h6>
         <li class="nav-item">
@@ -10,27 +10,27 @@
         <li class="nav-item">
           <a class="nav-link" href="#content">Content Formatting</a>
         </li>
-        <h6>Components</h6>
+        <h6>Bootstrap Components</h6>
         <li class="nav-item">
-          <a class="nav-link" href="#alerts">Alerts</a>
+          <a class="nav-link" href="#accordion">Accordion (ngx)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#alerts">Alerts (ngx)</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#badge">Badge</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#buttons">Buttons</a>
+          <a class="nav-link" href="#buttons">Buttons (ngrx)</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#breadcrumb">Breadcrumb</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#collapse">Collapse</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#card">Card</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#dropdowns">Dropdowns</a>
+          <a class="nav-link" href="#dropdowns">Dropdowns (ngrx)</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#forms">Forms</a>
@@ -42,16 +42,19 @@
           <a class="nav-link" href="#list-group">List Group</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#navs">Navs</a>
+          <a class="nav-link" href="#navs">Navs (ngrx)</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#navbar">Navbar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#pagination">Pagination</a>
+          <a class="nav-link" href="#pagination">Pagination (ngrx)</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#popovers">Popovers</a>
+          <a class="nav-link" href="#progress">Progress (ngrx)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#rating">Rating (ngrx)</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#spinners">Spinners</a>
@@ -59,10 +62,13 @@
         <li class="nav-item">
           <a class="nav-link" href="#tables">Tables</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tooltip">Tooltip</a>
+        </li>
       </ul>
     </div>
 
-    <div class="col content-wrapper">
+    <section class="col-md-9 col-xl-8">
       <div class="row">
         <div class="col-lg-12" id="headings">
           <div class="card card-sg">
@@ -150,115 +156,53 @@
           </div>
         </div>
 
+        <div class="col-lg-12" id="accordion">
+          <div class="card card-sg">
+            <div class="card-body">
+              <div class="card-title">Accordion (ngx)</div>
+
+              <accordion [isAnimated]="true">
+                <accordion-group heading="Static Header" [isDisabled]="true">
+                  This content is straight in the template.
+                </accordion-group>
+                <accordion-group heading="Another group">
+                  <p>Some content</p>
+                </accordion-group>
+                <accordion-group heading="Another group">
+                  <p>Some content</p>
+                </accordion-group>
+                <accordion-group heading="Another group">
+                  <p>Some content</p>
+                </accordion-group>
+              </accordion>
+            </div>
+          </div>
+        </div>
+
         <div class="col-lg-12" id="alerts">
           <div class="card card-sg">
             <div class="card-body">
-              <div class="card-title">Alerts</div>
+              <div class="card-title">Alerts (ngx)</div>
 
-              <div class="alert alert-primary" role="alert">
-                A simple primary alert with
-                <a href="#" class="alert-link">an example link</a>. Give it a
-                click if you like.
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="alert"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="alert alert-secondary" role="alert">
-                A simple secondary alert with
-                <a href="#" class="alert-link">an example link</a>. Give it a
-                click if you like.
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="alert"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="alert alert-success" role="alert">
-                A simple success alert with
-                <a href="#" class="alert-link">an example link</a>. Give it a
-                click if you like.
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="alert"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="alert alert-danger" role="alert">
-                A simple danger alert with
-                <a href="#" class="alert-link">an example link</a>. Give it a
-                click if you like.
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="alert"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="alert alert-warning" role="alert">
-                A simple warning alert with
-                <a href="#" class="alert-link">an example link</a>. Give it a
-                click if you like.
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="alert"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="alert alert-info" role="alert">
-                A simple info alert with
-                <a href="#" class="alert-link">an example link</a>. Give it a
-                click if you like.
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="alert"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="alert alert-light" role="alert">
-                A simple light alert with
-                <a href="#" class="alert-link">an example link</a>. Give it a
-                click if you like.
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="alert"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="alert alert-dark" role="alert">
-                A simple dark alert with
-                <a href="#" class="alert-link">an example link</a>. Give it a
-                click if you like.
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="alert"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
+              <h6>ngx</h6>
+              <alert type="success" [dismissible]="true">
+                <strong>Well done!</strong> You successfully read
+                <a href="#" class="alert-link">this important alert message</a>.
+              </alert>
+              <alert type="info" [dismissible]="true">
+                <strong>Heads up!</strong> This
+                <a href="#" class="alert-link">alert needs your attention</a>,
+                but it's not super important.
+              </alert>
+              <alert type="warning" [dismissible]="true">
+                <strong>Warning!</strong> Better check yourself, you're
+                <a href="#" class="alert-link">not looking too good</a>.
+              </alert>
+              <alert type="danger" [dismissible]="true">
+                <strong>Oh snap!</strong>
+                <a href="#" class="alert-link">Change a few things up</a> and
+                try submitting again.
+              </alert>
             </div>
           </div>
         </div>
@@ -301,7 +245,7 @@
         <div class="col-lg-12" id="buttons">
           <div class="card card-sg">
             <div class="card-body">
-              <div class="card-title">Buttons</div>
+              <div class="card-title">Buttons (ngrx)</div>
               <p>
                 <button type="button" class="btn btn-primary">Primary</button>
                 <button type="button" class="btn btn-secondary">
@@ -313,6 +257,8 @@
                 <button type="button" class="btn btn-danger">Danger</button>
                 <button type="button" class="btn btn-warning">Warning</button>
                 <button type="button" class="btn btn-link">Link</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
               </p>
 
               <hr />
@@ -335,6 +281,10 @@
                 <button type="button" class="btn btn-outline-warning">
                   Warning
                 </button>
+                <button type="button" class="btn btn-outline-light">
+                  Light
+                </button>
+                <button type="button" class="btn btn-outline-dark">Dark</button>
               </p>
 
               <hr />
@@ -363,6 +313,36 @@
               <button type="button" class="btn btn-secondary btn-lg" disabled>
                 Button
               </button>
+
+              <hr />
+              <p>Button Group</p>
+
+              <div class="btn-group">
+                <label
+                  class="btn btn-light"
+                  ngModel="checkModel.left"
+                  btnCheckbox
+                  tabindex="0"
+                  role="button"
+                  >Left</label
+                >
+                <label
+                  class="btn btn-light"
+                  ngModel="checkModel.middle"
+                  btnCheckbox
+                  tabindex="0"
+                  role="button"
+                  >Middle</label
+                >
+                <label
+                  class="btn btn-light"
+                  ngModel="checkModel.right"
+                  btnCheckbox
+                  tabindex="0"
+                  role="button"
+                  >Right</label
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -402,100 +382,6 @@
           </div>
         </div>
 
-        <div class="col-lg-12" id="collapse">
-          <div class="card card-sg">
-            <div class="card-body">
-              <div class="card-title">Collapse</div>
-
-              <div class="accordion" id="accordionExample">
-                <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                      <button
-                        class="btn btn-link btn-block text-left"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                      >
-                        Collapsible Group Item #1
-                      </button>
-                    </h2>
-                  </div>
-
-                  <div
-                    id="collapseOne"
-                    class="collapse show"
-                    aria-labelledby="headingOne"
-                    data-parent="#accordionExample"
-                  >
-                    <div class="card-body">
-                      Some placeholder content for the first accordion panel.
-                      This panel is shown by default, thanks to the
-                      <code>.show</code> class.
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                      <button
-                        class="btn btn-link btn-block text-left collapsed"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                      >
-                        Collapsible Group Item #2
-                      </button>
-                    </h2>
-                  </div>
-                  <div
-                    id="collapseTwo"
-                    class="collapse"
-                    aria-labelledby="headingTwo"
-                    data-parent="#accordionExample"
-                  >
-                    <div class="card-body">
-                      Some placeholder content for the second accordion panel.
-                      This panel is hidden by default.
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                      <button
-                        class="btn btn-link btn-block text-left collapsed"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseThree"
-                      >
-                        Collapsible Group Item #3
-                      </button>
-                    </h2>
-                  </div>
-                  <div
-                    id="collapseThree"
-                    class="collapse"
-                    aria-labelledby="headingThree"
-                    data-parent="#accordionExample"
-                  >
-                    <div class="card-body">
-                      And lastly, the placeholder content for the third and
-                      final accordion panel. This panel is hidden by default.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="col-lg-12" id="card">
           <div class="card card-sg">
             <div class="card-body">
@@ -526,38 +412,56 @@
         <div class="col-lg-12" id="dropdowns">
           <div class="card card-sg">
             <div class="card-body clearfix">
-              <div class="card-title">Dropdowns</div>
+              <div class="card-title">Dropdowns (ngrx)</div>
               <div class="card-body">
-                <div class="dropdown">
+                <div class="btn-group" dropdown>
                   <button
-                    class="btn btn-secondary dropdown-toggle"
+                    id="button-basic"
+                    dropdownToggle
                     type="button"
-                    id="dropdownMenuButton"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
+                    class="btn btn-primary dropdown-toggle"
+                    aria-controls="dropdown-basic"
                   >
-                    Dropdown button
+                    Button dropdown <span class="caret"></span>
                   </button>
-                  <div
+                  <ul
+                    id="dropdown-basic"
+                    *dropdownMenu
                     class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton"
+                    role="menu"
+                    aria-labelledby="button-basic"
                   >
-                    <h6 class="dropdown-header">Dropdown header</h6>
-                    <span class="dropdown-item-text">Dropdown item text</span>
-                    <a class="dropdown-item" href="#">Regular link</a>
-                    <a class="dropdown-item active" href="#">Active link</a>
-                    <a class="dropdown-item" href="#">Another link</a>
-                    <a
-                      class="dropdown-item disabled"
-                      href="#"
-                      tabindex="-1"
-                      aria-disabled="true"
-                      >Disabled link</a
-                    >
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Another link</a>
-                  </div>
+                    <li role="menuitem">
+                      <a class="dropdown-item" href="#">Action</a>
+                    </li>
+                    <li role="menuitem">
+                      <h6 class="dropdown-header">Dropdown header</h6>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li role="menuitem">
+                      <span class="dropdown-item-text">Dropdown item text</span>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-item active" href="#"
+                        >Something else here</a
+                      >
+                    </li>
+                    <li role="menuitem">
+                      <a
+                        class="dropdown-item disabled"
+                        href="#"
+                        tabindex="-1"
+                        aria-disabled="true"
+                        >Disabled link</a
+                      >
+                    </li>
+                    <li class="divider dropdown-divider"></li>
+                    <li role="menuitem">
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -1137,8 +1041,8 @@
 
         <div class="col-lg-12" id="navs">
           <div class="card card-sg">
-            <div class="card-body clearfix">
-              <div class="card-title">Navs</div>
+            <div class="card-body">
+              <div class="card-title">Navs (ngrx)</div>
 
               <p>Base Nav</p>
               <ul class="nav">
@@ -1189,50 +1093,25 @@
               <hr />
               <p>Tabs</p>
 
-              <ul class="nav nav-tabs">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link disabled"
-                    href="#"
-                    tabindex="-1"
-                    aria-disabled="true"
-                    >Disabled</a
+              <div>
+                <tabset>
+                  <tab heading="Basic title" id="tab1">Basic content</tab>
+                  <tab heading="Basic Title 1">Basic content 1</tab>
+                  <tab heading="Basic Title 2" [disabled]="true"
+                    >Disabled content</tab
                   >
-                </li>
-              </ul>
+                  <tab heading="Basic Title 2">Basic content 2</tab>
+                </tabset>
+              </div>
 
               <hr />
 
               <p>Pills</p>
-              <ul class="nav nav-pills">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link disabled"
-                    href="#"
-                    tabindex="-1"
-                    aria-disabled="true"
-                    >Disabled</a
-                  >
-                </li>
-              </ul>
+              <tabset type="pills">
+                <tab heading="Pills 1">Pills content 1</tab>
+                <tab heading="Pill disabled" [disabled]="true">Disabled</tab>
+                <tab heading="Pills 2">Pills content 2</tab>
+              </tabset>
             </div>
           </div>
         </div>
@@ -1563,46 +1442,8 @@
         <div class="col-lg-12" id="pagination">
           <div class="card card-sg">
             <div class="card-body">
-              <div class="card-title">Pagination</div>
-              <nav>
-                <ul class="pagination">
-                  <li class="page-item disabled">
-                    <a
-                      class="page-link"
-                      href="#"
-                      tabindex="-1"
-                      aria-disabled="true"
-                      >Previous</a
-                    >
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-12" id="popovers">
-          <div class="card card-sg">
-            <div class="card-body">
-              <div class="card-title">Popovers</div>
-
-              <button
-                type="button"
-                class="btn btn-default btn-secondary"
-                popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-                popoverTitle="Popover on top"
-                placement="top"
-              >
-                Popover on top
-              </button>
+              <div class="card-title">Pagination (ngrx)</div>
+              <pagination [boundaryLinks]="true" [totalItems]="55"></pagination>
             </div>
           </div>
         </div>
@@ -1610,31 +1451,26 @@
         <div class="col-lg-12" id="progress">
           <div class="card card-sg">
             <div class="card-body">
-              <div class="card-title">Progress Bars</div>
+              <div class="card-title">Progress Bars (ngrx)</div>
               <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 25%"
-                  aria-valuenow="25"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                >
-                  25%
-                </div>
+                <progressbar [max]="200" [value]="60">
+                  <span class="text-nowrap">60 / 200</span>
+                </progressbar>
               </div>
               <p></p>
               <p>Different Hights</p>
               <div class="progress" style="height: 0.5rem">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 75%"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+                <progressbar [max]="200" [value]="130"> </progressbar>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12" id="rating">
+          <div class="card card-sg">
+            <div class="card-body">
+              <div class="card-title">Rating (ngrx)</div>
+              <rating ngModel="7" [max]="10"></rating>
             </div>
           </div>
         </div>
@@ -1773,7 +1609,8 @@
                   </tr>
                 </tbody>
               </table>
-              <p>small table</p>
+
+              <p>Small table</p>
               <table class="table table-sm">
                 <thead>
                   <tr>
@@ -1806,7 +1643,59 @@
             </div>
           </div>
         </div>
+
+        <div class="col-lg-12" id="tooltip">
+          <div class="card card-sg">
+            <div class="card-body">
+              <div class="card-title">Tooltip</div>
+              <button
+                type="button"
+                class="btn btn-default btn-secondary mb-2 tooltip-space"
+                tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                placement="top"
+              >
+                Tooltip on top
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-default btn-secondary mb-2 tooltip-space"
+                tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                placement="right"
+              >
+                Tooltip on right
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-default btn-secondary mb-2 tooltip-space"
+                tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                placement="auto"
+              >
+                Tooltip auto
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-default btn-secondary mb-2 tooltip-space"
+                tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                placement="left"
+              >
+                Tooltip on left
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-default btn-secondary mb-2 tooltip-space"
+                tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                placement="bottom"
+              >
+                Tooltip on bottom
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   </div>
-</div>
+</main>

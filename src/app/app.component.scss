@@ -1,10 +1,8 @@
 .sidebar-wrapper {
-  padding-top: 1rem;
-}
+  position: sticky;
+  top: 1.5rem;
 
-.content-wrapper {
-  overflow-y: auto;
-  height: 100vh;
+  height: calc(100vh - 1rem);
 }
 .card-sg {
   margin-top: 1rem;
@@ -16,7 +14,7 @@
 }
 
 .badge-space,
-.popover-space,
+.tooltip-space,
 .spinner-space {
   margin-right: 1rem;
 }
