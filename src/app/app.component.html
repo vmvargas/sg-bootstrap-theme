@@ -92,7 +92,7 @@
                 This is a lead paragraph. It stands out from regular paragraphs.
               </p>
               <p>
-                This is an <b>ordinary paragraph</b> that is
+                This is an <b class="bold">ordinary paragraph</b> that is
                 <i>long enough</i> to wrap to <u>multiple lines</u> so that you
                 can see how the line spacing looks. Lorem ipsum dolor sit amet,
                 consectetur adipisicing elit. Magni quam optio architecto
@@ -102,7 +102,10 @@
                 enim quisquam inventore ipsa reprehenderit officiis repellendus,
                 sed tenetur laborum. At doloremque mollitia molestiae quam
                 praesentium quod blanditiis vero. Iusto dolore aut aspernatur
-                sunt. This is an <b>ordinary paragraph</b> that is
+                sunt.
+              </p>
+              <p>
+                This is an <b>ordinary paragraph</b> that is
                 <i>long enough</i> to wrap to <u>multiple lines</u> so that you
                 can see how the line spacing looks. Quos libero dicta eum
                 dignissimos adipisci quia amet necessitatibus voluptatum
@@ -183,8 +186,6 @@
           <div class="card card-sg">
             <div class="card-body">
               <div class="card-title">Alerts (ngx)</div>
-
-              <h6>ngx</h6>
               <alert type="success" [dismissible]="true">
                 <strong>Well done!</strong> You successfully read
                 <a href="#" class="alert-link">this important alert message</a>.
@@ -247,79 +248,39 @@
             <div class="card-body">
               <div class="card-title">Buttons (ngrx)</div>
               <p>
+                <button type="button" class="btn btn-light">Basic</button>
                 <button type="button" class="btn btn-primary">Primary</button>
-                <button type="button" class="btn btn-secondary">
-                  Secondary
-                </button>
-              </p>
-              <p>
-                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-secondary">Accent</button>
                 <button type="button" class="btn btn-danger">Danger</button>
-                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn disabled">Disabled</button>
                 <button type="button" class="btn btn-link">Link</button>
-                <button type="button" class="btn btn-light">Light</button>
-                <button type="button" class="btn btn-dark">Dark</button>
               </p>
-
               <hr />
               <p>Outline</p>
               <p>
+                <button type="button" class="btn btn-outline-light">
+                  Basic
+                </button>
                 <button type="button" class="btn btn-outline-primary">
                   Primary
                 </button>
                 <button type="button" class="btn btn-outline-secondary">
-                  Secondary
-                </button>
-              </p>
-              <p>
-                <button type="button" class="btn btn-outline-success">
-                  Success
+                  Accent
                 </button>
                 <button type="button" class="btn btn-outline-danger">
                   Danger
                 </button>
-                <button type="button" class="btn btn-outline-warning">
-                  Warning
+                <button type="button" disabled class="btn btn-outline-light">
+                  Disabled
                 </button>
-                <button type="button" class="btn btn-outline-light">
-                  Light
-                </button>
-                <button type="button" class="btn btn-outline-dark">Dark</button>
               </p>
-
-              <hr />
-              <p>Active State</p>
-              <a
-                href="#"
-                class="btn btn-primary btn-lg active"
-                role="button"
-                aria-pressed="true"
-                >Primary link</a
-              >
-              <a
-                href="#"
-                class="btn btn-secondary btn-lg active"
-                role="button"
-                aria-pressed="true"
-                >Link</a
-              >
-
-              <hr />
-              <p>Disabled State</p>
-
-              <button type="button" class="btn btn-lg btn-primary" disabled>
-                Primary button
-              </button>
-              <button type="button" class="btn btn-secondary btn-lg" disabled>
-                Button
-              </button>
 
               <hr />
               <p>Button Group</p>
 
               <div class="btn-group">
                 <label
-                  class="btn btn-light"
+                  class="btn btn-outline-light"
                   ngModel="checkModel.left"
                   btnCheckbox
                   tabindex="0"
@@ -327,7 +288,7 @@
                   >Left</label
                 >
                 <label
-                  class="btn btn-light"
+                  class="btn btn-outline-light active"
                   ngModel="checkModel.middle"
                   btnCheckbox
                   tabindex="0"
@@ -335,7 +296,7 @@
                   >Middle</label
                 >
                 <label
-                  class="btn btn-light"
+                  class="btn btn-outline-light"
                   ngModel="checkModel.right"
                   btnCheckbox
                   tabindex="0"

@@ -1,0 +1,174 @@
+// Color system
+$gray-100: #f3f4f8;
+$gray-200: #eeeeee;
+$gray-300: #e0e0e0;
+$gray-400: #bdbdbd;
+$gray-500: #9e9e9e;
+$gray-600: #757575;
+$gray-700: #616161;
+$gray-800: #30363d;
+$gray-900: #212121;
+
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900,
+);
+
+$blue: #1d6ae5;
+$red: #b00020;
+$yellow: #ffcf0a;
+
+$colors: (
+  "blue": $blue,
+  "red": $red,
+  "yellow": $yellow,
+);
+
+$primary: $blue;
+$secondary: $yellow;
+$danger: $red;
+$light: $gray-100;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "danger": $danger,
+  "light": $light,
+);
+
+// Options
+$enable-shadows: true;
+
+// Body
+$body-color: $gray-800;
+
+// Links
+$link-hover-color: #1555ba;
+
+// Components
+$border-radius: 1.15rem;
+$border-radius-lg: 1.5rem;
+$border-radius-sm: 1rem;
+$border-width: 4px;
+
+// Typography
+
+$font-path: "/assets/fonts/";
+
+@font-face {
+  font-family: "Inter Black";
+  src: url($font-path + "Inter-Black.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url($font-path + "Inter-Bold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter Extra Bold";
+  src: url($font-path + "Inter-ExtraBold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter Extra Light";
+  src: url($font-path + "Inter-ExtraLight.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter Light";
+  src: url($font-path + "Inter-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter Medium";
+  src: url($font-path + "Inter-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter Regular";
+  src: url($font-path + "Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter Semi Bold";
+  src: url($font-path + "Inter-SemiBold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter Thin";
+  src: url($font-path + "Inter-Thin.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+$font-family-sans-serif: "Inter Regular", Helvetica Neue, Helvetica, sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$font-weight-lighter: 400;
+$font-weight-light: 400;
+$font-weight-normal: 400;
+$font-weight-bold: 400;
+$font-weight-bolder: 400;
+
+$headings-font-family: "Inter Extra Bold", Helvetica Neue, Helvetica, sans-serif;
+$headings-font-weight: 400;
+
+$display1-weight: 400;
+$display2-weight: 400;
+$display3-weight: 400;
+$display4-weight: 400;
+
+$lead-font-weight: 400;
+
+$hr-border-color: $gray-300;
+$hr-border-width: 1px;
+
+// Tables
+
+// Buttons + Forms
+$input-btn-focus-box-shadow: none;
+
+// Buttons
+$btn-padding-x: 1.25rem;
+$btn-border-radius: $border-radius;
+$btn-border-radius-lg: $border-radius-lg;
+$btn-border-radius-sm: $border-radius-sm;
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+$btn-link-disabled-color: $gray-700;
+
+// forms

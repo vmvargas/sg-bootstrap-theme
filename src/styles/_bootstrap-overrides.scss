@@ -1,0 +1,118 @@
+@import "~bootstrap/scss/functions"; // required
+@import "~bootstrap/scss/functions"; // required
+@import "~bootstrap/scss/variables"; // required
+@import "~bootstrap/scss/mixins"; // required
+
+// Override defaults
+@import "./sg-theme";
+
+// import as needed
+@import "~bootstrap/scss/root"; // required
+@import "~bootstrap/scss/reboot"; // required
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group"; // requires forms
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar"; // requires nav
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+// @import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+// @import "~bootstrap/scss/toasts";
+// @import "~bootstrap/scss/modal"; // requires transitions
+@import "~bootstrap/scss/tooltip";
+// @import "~bootstrap/scss/popover";
+// @import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
+
+// Custom styles
+
+// Buttons + Forms
+.form-control:focus {
+  box-shadow: none;
+  border: 2px solid $primary;
+}
+// Buttons
+.btn-light,
+.btn-light:hover,
+.btn-light:focus {
+  background-color: $white;
+  border-color: $white;
+}
+
+.btn-outline-light {
+  background-color: $white;
+  border-color: $white;
+}
+
+.btn-outline-light,
+.btn-outline-light:hover,
+.btn-outline-light:focus,
+.btn-outline-primary,
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-secondary,
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus,
+.btn-outline-danger,
+.btn-outline-danger:hover,
+.btn-outline-danger:focus {
+  background-color: transparent;
+  border-color: #eeeeee;
+}
+
+.btn-outline-light,
+.btn-outline-light:hover {
+  color: $body-color;
+}
+.btn-outline-primary,
+.btn-outline-primary:hover {
+  color: $primary;
+}
+.btn-outline-secondary,
+.btn-outline-secondary:hover {
+  color: $secondary;
+}
+.btn-outline-danger,
+.btn-outline-danger:hover {
+  color: $danger;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus,
+.btn-outline-secondary:focus,
+.btn-outline-secondary.focus,
+.btn-outline-danger:focus,
+.btn-outline-danger.focus {
+  box-shadow: 0 0 0 0.2rem rgb(243 244 248 / 50%);
+}
+
+.btn.disabled,
+.btn:disabled {
+  color: $body-color;
+  background-color: $gray-200;
+  border-color: $gray-200;
+  cursor: default;
+}
+
+.btn.btn-outline-light.disabled,
+.btn.btn-outline-light:disabled {
+  background-color: transparent;
+}
