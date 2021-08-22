@@ -1313,7 +1313,26 @@
           <div class="card card-sg">
             <div class="card-body">
               <h4 class="card-title">Rating (ngrx)</h4>
-              <rating ngModel="7" [max]="10"></rating>
+              <rating
+                ngModel="2"
+                [max]="5"
+                [customTemplate]="ratingTemplate"
+              ></rating>
+              <ng-template
+                #ratingTemplate
+                let-index="index"
+                let-value="value"
+                class=""
+              >
+                <i
+                  *ngIf="index < value"
+                  class="bi bi-star-fill mr-2 rating-star"
+                ></i>
+                <i
+                  *ngIf="index >= value"
+                  class="bi bi-star mr-2 rating-star"
+                ></i>
+              </ng-template>
             </div>
           </div>
         </div>

@@ -1,3 +1,5 @@
+@import "src/styles/sg-theme";
+
 .sidebar-wrapper {
   position: sticky;
   top: 1.5rem;
@@ -17,4 +19,9 @@
 .tooltip-space,
 .spinner-space {
   margin-right: 1rem;
+}
+
+.rating-star {
+  color: $secondary;
+  font-size: 1.5rem;
 }
