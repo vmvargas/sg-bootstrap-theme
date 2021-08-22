@@ -1,29 +1,3 @@
+@import "./styles/utils";
+@import "./styles/sg-theme";
 @import "./styles/bootstrap-overrides";
-
-.bold {
-  font-family: "Inter Bold", Helvetica Neue, Helvetica, sans-serif;
-}
-.extra-bold {
-  font-family: "Inter Extra Bold", Helvetica Neue, Helvetica, sans-serif;
-}
-.bold {
-  font-family: "Inter Extra Bold", Helvetica Neue, Helvetica, sans-serif;
-}
-.extra-light {
-  font-family: "Inter Extra Light", Helvetica Neue, Helvetica, sans-serif;
-}
-.light {
-  font-family: "Inter Light", Helvetica Neue, Helvetica, sans-serif;
-}
-.medium {
-  font-family: "Inter Medium", Helvetica Neue, Helvetica, sans-serif;
-}
-.regular {
-  font-family: "Inter Regular", Helvetica Neue, Helvetica, sans-serif;
-}
-.semi-bold {
-  font-family: "Inter Semi Bold", Helvetica Neue, Helvetica, sans-serif;
-}
-.thin {
-  font-family: "Inter Thin", Helvetica Neue, Helvetica, sans-serif;
-}

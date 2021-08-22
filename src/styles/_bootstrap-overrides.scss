@@ -4,7 +4,30 @@
 @import "~bootstrap/scss/mixins"; // required
 
 // Override defaults
-@import "./sg-theme";
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900,
+);
+
+$colors: (
+  "blue": $blue,
+  "red": $red,
+  "yellow": $yellow,
+);
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "danger": $danger,
+  "light": $light,
+);
 
 // import as needed
 @import "~bootstrap/scss/root"; // required
@@ -42,13 +65,22 @@
 @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/print";
 
-// Custom styles
+/**
+* Custom styles
+*/
 
 // Buttons + Forms
-.form-control:focus {
+.form-control:not([disabled]):focus,
+.form-control:not([disabled]).focus {
   box-shadow: none;
-  border: 2px solid $primary;
+  border-color: $primary;
+  border-width: 2px;
 }
+
+.input-group-text {
+  background-color: $gray-100;
+}
+
 // Buttons
 .btn-light,
 .btn-light:hover,
@@ -75,7 +107,7 @@
 .btn-outline-danger:hover,
 .btn-outline-danger:focus {
   background-color: transparent;
-  border-color: #eeeeee;
+  border-color: $gray-200;
 }
 
 .btn-outline-light,
@@ -115,4 +147,67 @@
 .btn.btn-outline-light.disabled,
 .btn.btn-outline-light:disabled {
   background-color: transparent;
+}
+
+.btn-outline-light:not(:disabled):not(.disabled):active,
+.btn-outline-light:not(:disabled):not(.disabled).active,
+.show > .btn-outline-light.dropdown-toggle {
+  background-color: $gray-200;
+  border-color: $gray-200;
+}
+
+// Navs
+.nav-tabs .nav-link {
+  color: $body-color;
+  padding: 0.75rem 2rem;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 3px solid $primary;
+}
+
+.nav-tabs .nav-link.disabled,
+.nav-link.disabled {
+  color: $gray-400;
+}
+
+// Navbar
+
+.navbar-brand {
+  font-family: "Inter Semi Bold", Helvetica Neue, Helvetica, sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: $primary !important;
+}
+
+// Table
+
+.table .thead-light th {
+  background-color: $gray-100;
+}
+
+// Cards
+.card {
+  @extend .elevation-z1;
+}
+
+.card-header {
+  background-color: transparent;
+}
+
+// Breadcrumbs
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+}
+
+.breadcrumb-item a {
+  color: $body-color;
 }

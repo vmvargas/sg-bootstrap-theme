@@ -1,5 +1,5 @@
 // Color system
-$gray-100: #f3f4f8;
+$gray-100: #f5f5f7;
 $gray-200: #eeeeee;
 $gray-300: #e0e0e0;
 $gray-400: #bdbdbd;
@@ -9,58 +9,38 @@ $gray-700: #616161;
 $gray-800: #30363d;
 $gray-900: #212121;
 
-$grays: (
-  "100": $gray-100,
-  "200": $gray-200,
-  "300": $gray-300,
-  "400": $gray-400,
-  "500": $gray-500,
-  "600": $gray-600,
-  "700": $gray-700,
-  "800": $gray-800,
-  "900": $gray-900,
-);
-
 $blue: #1d6ae5;
 $red: #b00020;
 $yellow: #ffcf0a;
-
-$colors: (
-  "blue": $blue,
-  "red": $red,
-  "yellow": $yellow,
-);
 
 $primary: $blue;
 $secondary: $yellow;
 $danger: $red;
 $light: $gray-100;
 
-$theme-colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "danger": $danger,
-  "light": $light,
-);
-
 // Options
 $enable-shadows: true;
 
+// Spacing
+$spacer: 1rem;
+
 // Body
+$body-bg: $gray-100;
 $body-color: $gray-800;
 
 // Links
 $link-hover-color: #1555ba;
 
 // Components
-$border-radius: 1.15rem;
-$border-radius-lg: 1.5rem;
-$border-radius-sm: 1rem;
-$border-width: 4px;
+$border-radius: 0.5rem;
+$border-radius-lg: 0.6rem;
+$border-radius-sm: 0.4rem;
+$border-color: $gray-300;
 
 // Typography
-
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
 $font-path: "/assets/fonts/";
+$text-muted: $gray-500;
 
 @font-face {
   font-family: "Inter Black";
@@ -143,8 +123,10 @@ $font-weight-normal: 400;
 $font-weight-bold: 400;
 $font-weight-bolder: 400;
 
-$headings-font-family: "Inter Extra Bold", Helvetica Neue, Helvetica, sans-serif;
+$headings-font-family: "Inter Bold", Helvetica Neue, Helvetica, sans-serif;
 $headings-font-weight: 400;
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 2.25;
 
 $display1-weight: 400;
 $display2-weight: 400;
@@ -157,18 +139,73 @@ $hr-border-color: $gray-300;
 $hr-border-width: 1px;
 
 // Tables
+$table-head-bg: $gray-200;
 
 // Buttons + Forms
 $input-btn-focus-box-shadow: none;
 
 // Buttons
-$btn-padding-x: 1.25rem;
-$btn-border-radius: $border-radius;
-$btn-border-radius-lg: $border-radius-lg;
-$btn-border-radius-sm: $border-radius-sm;
+$btn-padding-x: $spacer * 1.25;
+$btn-border-radius: 1.15rem;
+$btn-border-radius-lg: 1.5rem;
+$btn-border-radius-sm: 1rem;
 $btn-box-shadow: none;
 $btn-focus-box-shadow: none;
 $btn-active-box-shadow: none;
 $btn-link-disabled-color: $gray-700;
 
-// forms
+// Forms
+$input-disabled-bg: $gray-100;
+$input-color: $gray-700;
+$input-border-color: $gray-400;
+$input-box-shadow: none;
+
+// Navs
+$nav-tabs-link-active-color: $body-color;
+$nav-tabs-link-hover-border-color: none;
+$nav-divider-margin-y: $spacer;
+$nav-pills-border-radius: 1.5rem;
+
+//  Navbar
+$navbar-nav-link-padding-x: $spacer;
+$navbar-toggler-padding-x: $spacer;
+
+$navbar-light-color: $body-color;
+$navbar-light-hover-color: $primary;
+$navbar-light-active-color: $body-color;
+$navbar-light-disabled-color: $gray-400;
+
+// Dropdown
+$dropdown-item-padding-y: $spacer / 2;
+$dropdown-item-padding-x: $spacer * 1.5;
+$dropdown-divider-margin-y: $spacer / 4;
+$dropdown-header-padding: $dropdown-item-padding-y $dropdown-item-padding-x
+  $dropdown-item-padding-y 0.75rem;
+
+// Cards
+$card-border-radius: 1.15rem;
+$card-border-color: $border-color;
+
+// Tooltips
+$tooltip-color: $body-color;
+$tooltip-bg: $gray-300;
+$tooltip-opacity: 1;
+$tooltip-padding-y: 0.5rem;
+$tooltip-margin: 5px;
+
+// Modal
+$modal-content-border-radius: 1.15rem;
+
+// List group
+$list-group-disabled-color: $gray-400;
+$breadcrumb-bg: transparent;
+$breadcrumb-item-padding: $spacer;
+$breadcrumb-divider-color: $gray-300;
+
+// Close
+$close-font-size: $font-size-base * 2;
+$close-color: $body-color;
+$close-text-shadow: none;
+
+// Code
+$code-color: $secondary !default;

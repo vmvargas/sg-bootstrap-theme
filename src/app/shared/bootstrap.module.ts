@@ -7,6 +7,8 @@ import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 import { RatingModule } from 'ngx-bootstrap/rating';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { ModalModule } from 'ngx-bootstrap/modal';
+
 @NgModule({
   imports: [
     AccordionModule.forRoot(),
@@ -17,6 +19,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
     RatingModule.forRoot(),
     TabsModule.forRoot(),
     TooltipModule.forRoot(),
+    ModalModule.forRoot(),
   ],
   exports: [
     AccordionModule,
@@ -27,6 +30,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
     RatingModule,
     TabsModule,
     TooltipModule,
+    ModalModule,
   ],
   declarations: [],
   providers: [],
